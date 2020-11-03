@@ -1,0 +1,101 @@
+@import "variables.sass"
+
+.nav-main
+  position: fixed
+  z-index: 9
+  max-width: 1920px
+  display: flex
+  justify-content: space-around
+  align-items: center
+  width: 100%
+  background-color: rgba(27, 25, 27, 0.8)
+
+.nav-main p
+  padding-top: 20px
+  padding-right: 20px
+  padding-bottom: 20px
+  padding-left: 20px
+  line-height: 1.6
+  font-size: 14px
+  text-transform: uppercase
+  color: $color-font-light
+
+.nav-main__list
+  display: flex
+  // background-color: rgba(22, 14, 97, 0.473)
+
+.nav-main__item:hover
+  outline: 2px inset rgb(2, 2, 27)
+  background-color: rgba(30, 42, 85, 0.7)
+
+.logo-nav
+  width: 100px
+  padding-left: 20px
+  // background-color: rgba(22, 14, 97, 0.473)
+
+.lang
+  width: 30px
+  padding-top: 5px
+  // background-color: rgba(208, 206, 221, 0.856)
+
+.calling-now p
+  font-family: "OpenSans-Regular"
+  font-size: 14px
+  line-height: 1.6
+  cursor: pointer
+  // background-color: rgba(97, 14, 90, 0.473)
+
+.btn-open-menu
+  width: 40px
+  height: 32px
+  background-size: cover
+  background-position: center
+  background-origin: content-box
+  background-image: url(../img/icon_open_menu.png)
+
+.btn-close-menu
+  width: 40px
+  height: 32px
+  background-size: cover
+  background-position: center
+  background-origin: content-box
+  background-image: url(../img/icon_close_menu.png)
+
+.nav-main__list-mob
+  position: absolute
+  display: none
+  margin-top: 395px
+  animation: bounceNav 1.2s
+  background-color: rgba(27, 25, 27, 0.8)
+
+.list-mob-show
+  display: block
+
+.nav-main__item-mob
+  outline: 1px inset rgb(2, 2, 27)
+
+.nav-main__item-mob:hover
+  outline: 1px inset rgb(154, 146, 155)
+  background-color: rgba(30, 42, 85, 0.7)
+
+
+
+@media ( max-width: 960px )
+  .nav-main
+    justify-content: space-between
+
+  .nav-main__list
+    position: absolute
+    width: 1px
+    height: 1px
+    margin: -1px
+    border: 0
+    padding: 0
+    white-space: nowrap
+    clip-path: inset(100%)
+    clip: rect(0 0 0 0)
+    overflow: hidden
+
+@media ( min-width: 961px )
+  .btn-open-menu, .btn-close-menu, .nav-main__list-mob
+    display: none

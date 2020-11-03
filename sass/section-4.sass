@@ -1,0 +1,62 @@
+@import "variables.sass"
+@import "mixins.sass"
+
+.section-4
+  text-align: center
+  background-color: $color-back-light
+
+.section-4__container
+  @include section_container_var1
+  width: 80%
+  margin-left: 10%
+  margin-right: 10%
+  padding-top: 80px
+  // background-color: rgba(149, 228, 185, 0.644)
+
+figure
+  width: 600px
+  padding: 10px
+  filter: grayscale(1)
+  // background-color: rgba(226, 29, 29, 0.281)
+
+figure:hover
+  filter: saturate(150%)
+
+.section-4__container img
+  width: 100%
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+
+figcaption
+  position: absolute
+  font-family: "OpenSans-Regular"
+  font-size: 20px
+  line-height: 1,5
+  padding: 12px
+  margin-top: -63px
+  background-color: $color-back-light
+
+@media ( max-width: 1600px )
+  figure
+    width: 500px
+
+@media ( max-width: 1350px )
+  figure
+    width: 70%
+    margin-left: 15%
+    margin-right: 15%
+
+@media ( max-width: 960px )
+  figure
+    width: 80%
+    margin-left: 10%
+    margin-right: 10%
+
+@media ( max-width: 650px )
+  figcaption
+    font-size: 16px
+
+@media ( max-width: 600px )
+  figure
+    width: 90%
+    margin-left: 5%
+    margin-right: 5%

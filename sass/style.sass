@@ -1,0 +1,23 @@
+@import "variables.sass"
+@import "mixins.sass"
+
+body
+  max-width: 1920px
+  margin: auto
+  // font-family: "now-light"
+  font-family: "OpenSans-Light"
+  background-color: #1a1d1f
+
+.section-heading
+  @include text_var1
+  padding-top: 200px
+  padding-right: 10px
+  padding-left: 10px
+  font-size: 40px
+  font-family: "OpenSans-Regular"
+  text-transform: uppercase
+
+
+@media ( max-width: 850px )
+  .section-heading
+    font-size: 30px

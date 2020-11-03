@@ -1,0 +1,86 @@
+@import "variables.sass"
+@import "mixins.sass"
+
+.section-5
+  background-color: #252525
+  background-image: url(../img/backGround_5_2.jpg)
+  background-attachment: scroll
+  background-size: cover
+  background-position: center
+  background-origin: content-box
+  margin-bottom: -5px
+
+.section-5 h5
+  @include text_var1
+  width: 90%
+  padding: 5%
+  padding-bottom: 2%
+  font-family: "OpenSans-Bold"
+  font-size: 18px
+  color: $color-font-light
+
+.section-5 p
+  @include text_var1
+  width: 90%
+  padding-top: 5%
+  padding-left: 5%
+  padding-right: 5%
+  padding-bottom: 6%
+  color: $color-font-light
+
+.section-5 ul
+  width: 91%
+  padding-top: 0
+  padding-right: 2%
+  padding-bottom: 7%
+  padding-left: 7%
+  list-style: square
+  list-style-position: outside
+
+.section-5 li
+  @include text_var1
+  color: $color-font-light
+
+.section-5 img
+  width: 70%
+  padding-right: 15%
+  padding-left: 15%
+  padding-bottom: 7%
+
+.section-5__container
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  width: 60%
+  padding-top: 150px
+  padding-bottom: 150px
+  margin-left: 20%
+  margin-right: 20%
+  // background: rgba(197, 159, 159, 0.349)
+
+.section-5__item
+  width: 400px
+  margin: 20px
+  background-color: rgba(0, 0, 0, 0.7)
+
+@media ( max-width: 1500px )
+  .section-5__container
+    width: 90%
+    margin-left: 5%
+    margin-right: 5%
+
+@media ( max-width: 1000px )
+  .section-5__item
+    width: 70%
+    margin-left: 15%
+    margin-right: 15%
+
+@media ( max-width: 850px )
+  .section-5 p
+    font-size: 16px
+  .section-5 li
+    font-size: 16px
+  .section-5__item
+    width: 80%
+    margin-left: 10%
+    margin-right: 10%
